@@ -30,12 +30,12 @@ public class UsuarioRepo {
     }
     public Usuario findById(Integer id){
         System.out.println(String.format("FIND/id - Recebendo o id: %d para localizar um usuário", id));
-        return new Usuario("gleyson","password");
+        return new Usuario("gisele","password");
     }
 
     public Usuario findByUsername(String username){
         System.out.println(String.format("FIND/username - Recebendo o usernamae: %s para localizar um usuário", username));
-        return new Usuario("gleyson","password");
+        return new Usuario("gisele","password");
     }
 
 }
