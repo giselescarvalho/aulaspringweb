@@ -29,8 +29,13 @@ public class UsuarioController {
         repodousu.deleteById(id);
     }
 
-    @PostMapping
+    @PostMapping()
     public void postUsuario(@RequestBody Usuario usuario){
+        repodousu.save(usuario);
+    }
+
+    @PutMapping()
+    public void putUsuario(@RequestBody Usuario usuario){
         repodousu.save(usuario);
     }
 }
